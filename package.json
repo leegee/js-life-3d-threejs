@@ -1,17 +1,18 @@
 {
-  "name": "life",
-  "description": "Game of life",
-  "version": "0.0.0",
+  "name": "js-life-3d-threejs",
+  "description": "Conway's Game Of Life in 3D",
+  "version": "0.0.1",
   "engines": {
     "node": ">= 0.8.0"
   },
-  "scripts": {
-    "test": "grunt qunit"
+  "repository" : {
+    "type" : "git",
+     "url" : "https://github.com/leegee/js-life-3d-threejs.git"
   },
   "author": {
-    "name": "Author Name",
-    "email": "email@domain.com",
-    "url": "http://bower.io/"
+    "name": "Lee Goddard",
+    "email": "npm@leegoddard.net",
+    "url": "http://leegoddard.net/"
   },
   "licenses": [
     {
@@ -19,6 +20,9 @@
       "url": "http://mit-license.org"
     }
   ],
+  "scripts": {
+    "test": "grunt qunit"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-qunit": "*",

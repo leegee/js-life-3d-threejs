@@ -1,6 +1,6 @@
-# life
+# js-life-3d-threejs
 
-Conway's Game of Life in 3D
+Conway's Game of Life in 3D.
 
 ## Getting Started
 

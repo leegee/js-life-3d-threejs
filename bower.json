@@ -1,9 +1,9 @@
 {
-  "name": "life",
+  "name": "js-life-3d-threejs",
   "version": "0.0.1",
-  "homepage": "",
+  "homepage": "https://github.com/leegee/js-life-3d-threejs",
   "authors": [
-    "lee <leegee@leegoddard.net>"
+    "lee <bower@leegoddard.net>"
   ],
   "license": "MIT",
 
