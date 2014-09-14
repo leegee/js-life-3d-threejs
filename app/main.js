@@ -1,11 +1,9 @@
-// define(["Life", "jquery", "three"], function main (Life, jQuery, THREE) {
-//     jQuery('body').append('jQuery ' + jQuery.fn.jquery + ' loaded!');
-
-//     var game = new Life({
-//         matrix: {
-//             x: 3,
-//             y: 3
-//         }
-//     });
-
-// });
+define(["Life", "three"], function main (Life, THREE) {
+    var game = new Life({
+        matrix: {
+            x: 9,
+            y: 9,
+            z: 3
+        }
+    });
+});
