@@ -1,6 +1,7 @@
-'use strict';
+/*jshint node:true */
 
 module.exports = function(grunt) {
+  'use strict';
 
   // Project configuration.
   grunt.initConfig({
@@ -44,11 +45,11 @@ module.exports = function(grunt) {
         },
         src: 'Gruntfile.js'
       },
-      app: {
+      lib: {
         options: {
-          jshintrc: 'app/.jshintrc'
+          jshintrc: 'lib/.jshintrc'
         },
-        src: ['app/**/*.js']
+        src: ['lib/**/*.js']
       },
       test: {
         options: {
@@ -62,9 +63,9 @@ module.exports = function(grunt) {
         files: '<%= jshint.gruntfile.src %>',
         tasks: ['jshint:gruntfile']
       },
-      app: {
-        files: '<%= jshint.app.src %>',
-        tasks: ['jshint:app', 'qunit']
+      lib: {
+        files: '<%= jshint.lib.src %>',
+        tasks: ['jshint:lib', 'qunit']
       },
       test: {
         files: '<%= jshint.test.src %>',
@@ -75,7 +76,7 @@ module.exports = function(grunt) {
       compile: {
         options: {
           name: 'config',
-          mainConfigFile: 'app/config.js',
+          mainConfigFile: 'lib/config.js',
           out: '<%= concat.dist.dest %>',
           optimize: 'none'
         }
