@@ -1,4 +1,4 @@
-define(function() { 
+define(function() {
   QUnit.start();
   /*
     ======== A Handy Little QUnit Reference ========
@@ -21,21 +21,14 @@ define(function() {
       throws(block, [expected], [message])
   */
 
-  /* require your app components
-   * for example, if you have /app/modules/doSomething.js, you can
-   * require(['modules/doSomething'], function(theModule) {
-   *   // test the things
-   * });
-   */
-
-  module('jQuery');
+  module('THREE');
 
   test('is a function', function() {
     expect(1);
     stop();
-    require(['jquery'], function($) {
+    define(['three'], function(THREE) {
       start();
-      strictEqual(typeof $, 'function', 'is a function');
+      strictEqual(typeof new THREE.Scene(), 'function', 'is a function');
     });
   });
 
