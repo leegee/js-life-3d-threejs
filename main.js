@@ -10,9 +10,11 @@ define(["Life", "three"], function main (Life, THREE) {
         minFrameDuration    : 1000,
         // matrix              : { x: 12, y: 12, z: 1 },
         map : [
-            [ 0, 1, 0],
-            [ 0, 1, 0],
-            [ 0, 1, 0],
+            [ 0, 0, 0 ],
+            [ 0, 1, 0 ],
+            [ 0, 1, 0 ],
+            [ 0, 1, 0 ],
+            [ 0, 0, 0 ]
         ]
     });
 });
